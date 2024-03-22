@@ -1,0 +1,35 @@
+export const infoCardB = [
+    {
+        id: 1,
+        imageA: "/images/4.webp",
+        imageB: "/images/4b.webp",
+        discount: "-50%",
+        eco: "Sostenibilità",
+        label: "Levi's",
+        title: "TEE UNISEX",
+        finalPrice: 14.99,
+        initialPrice: 29.99
+    },
+    {
+        id: 2,
+        imageA: "/images/5.webp",
+        imageB: "/images/5b.webp",
+        discount: "-50%",
+        eco: "None",
+        label: "Maya Deluxe",
+        title: "STRIPE BODICE",
+        finalPrice: 99.99,
+        initialPrice: "None",
+    },
+    {
+        id: 3,
+        imageA: "/images/6.webp",
+        imageB: "/images/6b.webp",
+        discount: "None",
+        eco: "Sostenibilità",
+        label: "Esprit",
+        title: "MAGLIONE - BLACK",
+        finalPrice: 29.99,
+        initialPrice: "None",
+    },
+]
