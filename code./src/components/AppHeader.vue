@@ -4,6 +4,12 @@ export default {
     name: 'AppHeader',
     components: {
         AppLogo,
+    },
+    data() {
+        return {
+            voices: ['Donna', 'Uomo', 'Bambino'],
+
+        }
     }
 }
 
@@ -16,9 +22,8 @@ export default {
     <header class="site_header">
         <nav class="main_menu">
             <ul class="categories">
-                <li>Donna</li>
-                <li>Uomo</li>
-                <li>Bambini</li>
+                <li v-for="voice in voices">{{ voice }}</li>
+
             </ul>
             <AppLogo />
 
@@ -27,6 +32,8 @@ export default {
                     <li><i class="fa-regular fa-user"></i></li>
                     <li><i class="fa-regular fa-heart"></i></li>
                     <li><i class="fa-solid fa-bag-shopping"></i></li>
+
+
                 </ul>
             </div>
         </nav>
