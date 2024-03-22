@@ -1,0 +1,142 @@
+@import '../partials/variables';
+
+.site_main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 80vw;
+    /* height: 800px; */
+    padding-top: 80px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    width: 100%;
+    /* height: 400px; */
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    margin-bottom: 40px;
+}
+
+.card {
+    width: calc((90%/3));
+    /* height: 100%; */
+    /* background-color: green; */
+    /* border: 1px solid black; */
+}
+
+.item {
+    width: 100%;
+    /* height: 85%; */
+    /* background-color: lightgreen; */
+    position: relative;
+}
+
+
+
+.heart {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.discount {
+    color: white;
+    font-weight: bold;
+    font-size: .75rem;
+    background-color: $red;
+    width: max-content;
+    padding: 2px 5px;
+    position: absolute;
+    bottom: 30px
+}
+
+.eco {
+    color: white;
+    font-weight: bold;
+    font-size: .75rem;
+    background-color: $green;
+    width: max-content;
+    padding: 2px 5px;
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+}
+
+.eco_2 {
+    color: white;
+    font-weight: bold;
+    font-size: .75rem;
+    background-color: $green;
+    width: max-content;
+    padding: 2px 5px;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+}
+
+
+.label {
+    color: gray;
+    font-size: .5rem;
+}
+
+.title {
+    font-size: .5rem;
+    font-weight: bold;
+}
+
+.price {
+    display: flex;
+}
+
+.final_price {
+    color: $red;
+    font-size: .5rem;
+}
+
+.initial_price {
+    color: gray;
+    font-size: .5rem;
+    text-decoration: line-through;
+}
+
+.b {
+    position: absolute;
+    left: 0;
+    opacity: 0%;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card:hover .b {
+    opacity: 100%;
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+.card:hover .a {
+    opacity: 0%;
+}
+
+.card:hover .heart {
+    color: $red;
+
+}
+
+li:hover {
+    cursor: pointer;
+}
