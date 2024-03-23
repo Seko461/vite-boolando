@@ -19,7 +19,7 @@ export const infoCardB = [
         label: "Maya Deluxe",
         title: "STRIPE BODICE",
         finalPrice: 99.99,
-        initialPrice: "None",
+        // initialPrice: "None",
     },
     {
         id: 3,
@@ -30,6 +30,6 @@ export const infoCardB = [
         label: "Esprit",
         title: "MAGLIONE - BLACK",
         finalPrice: 29.99,
-        initialPrice: "None",
+        // initialPrice: "None",
     },
 ]

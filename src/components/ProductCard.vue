@@ -11,8 +11,8 @@ export default {
             <img class="a" :src="product.imageA" width="100%" alt="">
             <img class="b" :src="product.imageB" width="100%" alt="">
             <div class="heart">&hearts;</div>
-            <div class="discount">{{ product.discount }}</div>
-            <div class="eco">{{ product.eco }}</div>
+            <div class="discount" :class="product.discount === 'None' ? 'no-display' : ''">{{ product.discount }}</div>
+            <div class="eco" :class="product.eco === 'None' ? 'no-display' : ''">{{ product.eco }}</div>
         </div>
         <div class="description">
             <div class="label">{{ product.label }}</div>
@@ -25,4 +25,8 @@ export default {
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.no-display {
+    display: none;
+}
+</style>
