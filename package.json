@@ -5,10 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "serve": "json-server --watch ./src/db.json",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.6.8",
     "vue": "^3.4.21"
   },
   "devDependencies": {

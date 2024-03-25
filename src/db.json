@@ -2,8 +2,8 @@
     "products": [
         {
             "id": 1,
-            "imageA": "1.webp",
-            "imageB": "1b.webp",
+            "imageA": "/images/1.webp",
+            "imageB": "/images/1b.webp",
             "label": "Levi's",
             "title": "Relaxed Fit",
             "initialPrice": 29.99,
@@ -13,8 +13,8 @@
         },
         {
             "id": 2,
-            "imageA": "2.webp",
-            "imageB": "2b.webp",
+            "imageA": "/images/2.webp",
+            "imageB": "/images/2b.webp",
             "label": "Guess",
             "title": "Roses Tee",
             "initialPrice": 29.99,
@@ -23,8 +23,8 @@
         },
         {
             "id": 3,
-            "imageA": "3.webp",
-            "imageB": "3b.webp",
+            "imageA": "/images/3.webp",
+            "imageB": "/images/3b.webp",
             "label": "Come Zucchero Filato",
             "title": "Voglia di colori pastello",
             "initialPrice": 184.99,
@@ -34,8 +34,8 @@
         },
         {
             "id": 4,
-            "imageA": "4.webp",
-            "imageB": "4b.webp",
+            "imageA": "/images/4.webp",
+            "imageB": "/images/4b.webp",
             "label": "Levi's",
             "title": "Tee Unisex",
             "initialPrice": 29.99,
@@ -46,8 +46,8 @@
         },
         {
             "id": 5,
-            "imageA": "5.webp",
-            "imageB": "5b.webp",
+            "imageA": "/images/5.webp",
+            "imageB": "/images/5b.webp",
             "label": "Maya Deluxe",
             "title": "Stripe Bodice",
             "finalPrice": 99.99,
@@ -56,8 +56,8 @@
         },
         {
             "id": 6,
-            "imageA": "6.webp",
-            "imageB": "6b.webp",
+            "imageA": "/images/6.webp",
+            "imageB": "/images/6b.webp",
             "label": "Esprit",
             "title": "Maglione - Black",
             "finalPrice": 29.99,

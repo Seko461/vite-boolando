@@ -2,6 +2,7 @@
 import ProductCard from './ProductCard.vue';
 import { infoCardA } from '../info_cards_a';
 import { infoCardB } from '../info_cards_b';
+import axios from 'axios';
 
 export default {
     name: 'AppMain',
@@ -10,9 +11,15 @@ export default {
     },
     data() {
         return {
-            infoCardA,
-            infoCardB,
+            products: []
         }
+    },
+    mounted() {
+        axios.get('http://localhost:3000/products')
+            .then(response => {
+                console.log(response);
+                this.products = response.data
+            })
     }
 
 }
@@ -27,9 +34,9 @@ export default {
         <div class="container">
             <!-- --------first row ------------->
             <div class="row">
-                <ProductCard :product="product" :key="product.id" v-for="product in infoCardA" />
+                <ProductCard :product="product" :key="product.id" v-for="product in products" />
 
-                <ProductCard :product="product" :key="product.id" v-for="product in infoCardB" />
+
             </div>
 
 
