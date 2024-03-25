@@ -29,12 +29,9 @@ export default {
             <div class="row">
                 <ProductCard :product="product" :key="product.id" v-for="product in infoCardA" />
 
-            </div>
-            <!-- --------second row ------------->
-            <div class="row">
                 <ProductCard :product="product" :key="product.id" v-for="product in infoCardB" />
-
             </div>
+
 
 
 

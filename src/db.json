@@ -1,0 +1,68 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "imageA": "1.webp",
+            "imageB": "1b.webp",
+            "label": "Levi's",
+            "title": "Relaxed Fit",
+            "initialPrice": 29.99,
+            "finalPrice": 14.99,
+            "eco": "Sostenibilità",
+            "discount": "-50%"
+        },
+        {
+            "id": 2,
+            "imageA": "2.webp",
+            "imageB": "2b.webp",
+            "label": "Guess",
+            "title": "Roses Tee",
+            "initialPrice": 29.99,
+            "finalPrice": 20.99,
+            "discount": "-30%"
+        },
+        {
+            "id": 3,
+            "imageA": "3.webp",
+            "imageB": "3b.webp",
+            "label": "Come Zucchero Filato",
+            "title": "Voglia di colori pastello",
+            "initialPrice": 184.99,
+            "finalPrice": 129.99,
+            "eco": "None",
+            "discount": "-30%"
+        },
+        {
+            "id": 4,
+            "imageA": "4.webp",
+            "imageB": "4b.webp",
+            "label": "Levi's",
+            "title": "Tee Unisex",
+            "initialPrice": 29.99,
+            "finalPrice": 14.99,
+            "eco": "Sostenibilità",
+            "type": "discount",
+            "value": "-50%"
+        },
+        {
+            "id": 5,
+            "imageA": "5.webp",
+            "imageB": "5b.webp",
+            "label": "Maya Deluxe",
+            "title": "Stripe Bodice",
+            "finalPrice": 99.99,
+            "eco": "None",
+            "discount": "-50%"
+        },
+        {
+            "id": 6,
+            "imageA": "6.webp",
+            "imageB": "6b.webp",
+            "label": "Esprit",
+            "title": "Maglione - Black",
+            "finalPrice": 29.99,
+            "eco": "Sostenibilità",
+            "discount": "-50%"
+        }
+    ]
+}
