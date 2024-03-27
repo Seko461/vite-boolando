@@ -1,8 +1,19 @@
 <script >
-
+import { state } from '../state.js';
 export default {
     name: 'AppFooter',
     components: {
+
+    },
+    data() {
+        return {
+            products: [],
+            state
+        }
+    },
+    mounted() {
+
+        console.log(this.state.message);
 
     }
 }
@@ -21,6 +32,7 @@ export default {
                     <li>Informazioni legali</li>
                     <li>Informazioni sulla privacy</li>
                     <li>Diritto di recesso</li>
+                    <!-- <li>{{ state.message }}</li> -->
                 </ul>
             </div>
             <div class="find_us">

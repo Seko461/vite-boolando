@@ -19,6 +19,7 @@
             "title": "Roses Tee",
             "initialPrice": 29.99,
             "finalPrice": 20.99,
+            "eco": "None",
             "discount": "-30%"
         },
         {
@@ -41,8 +42,7 @@
             "initialPrice": 29.99,
             "finalPrice": 14.99,
             "eco": "Sostenibilità",
-            "type": "discount",
-            "value": "-50%"
+            "discount": "-50%"
         },
         {
             "id": 5,
