@@ -24,6 +24,12 @@
     flex-wrap: wrap;
 }
 
+.row>div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
 .card {
     width: calc((90%/3));
     /* height: 100%; */

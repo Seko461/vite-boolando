@@ -40,16 +40,20 @@ export default {
         <div class="container">
             <!-- --------first row ------------->
             <div class="row">
-                <ProductCard :product="product" :key="product.id" v-for="product in state.products" />
+
+
+                <div v-if="state.products.length == state.products.length">
+                    <ProductCard :product="product" :key="product.id" v-for="product in state.products" />
+                </div>
+
+
+
+
+
 
 
             </div>
-
-
-
-
         </div>
-
 
     </main>
 </template>
