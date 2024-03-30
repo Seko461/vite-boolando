@@ -13,8 +13,19 @@ export default {
     data() {
         return {
 
-            state
+            state,
+            visible: false,
         }
+    },
+    methods: {
+        sonoQui() {
+            console.log('sono qui');
+            this.visible = true;
+        },
+        notVisible() {
+            this.visible = false;
+        }
+
     },
     mounted() {
 
@@ -43,7 +54,11 @@ export default {
 
 
                 <div v-if="state.products.length == state.products.length">
-                    <ProductCard :product="product" :key="product.id" v-for="product in state.products" />
+                    <ProductCard :product="product" :key="product.id" v-for="product in state.products" @click="sonoQui" />
+                </div>
+
+                <div v-if="visible === true" @click="notVisible">
+                    <h1>Ciao</h1>
                 </div>
 
 
