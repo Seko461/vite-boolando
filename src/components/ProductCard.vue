@@ -1,12 +1,18 @@
 <script>
+import { state } from '../state';
 export default {
     name: 'ProductCard',
-    props: ['product']
+    props: ['product'],
+    data() {
+        return {
+            state
+        }
+    }
 }
 </script>
 
 <template>
-    <div class="card">
+    <div @click="$emit('showProduct', product)" class="card">
         <div class="item">
             <img class="a" :src="product.imageA" width="100%" alt="">
             <img class="b" :src="product.imageB" width="100%" alt="">
