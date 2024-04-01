@@ -17,7 +17,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: rgb(255, 255, 255);
-        width: 80%;
+        width: 60%;
         height: 80%;
 
 
@@ -53,7 +53,7 @@
 
             .left {
                 .product-images {
-                    // border: 1px solid black;
+                    border: 1px solid black;
                     width: 80%;
                     text-align: center;
                     display: flex;
@@ -68,7 +68,7 @@
 
                         >.buttons {
                             display: flex;
-                            gap: 18rem;
+                            gap: 19.2rem;
                             transform: translateY(-16rem);
 
 
