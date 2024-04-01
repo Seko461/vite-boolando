@@ -1,0 +1,159 @@
+@import '../partials/variables';
+
+
+.modal-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.333);
+    z-index: 9;
+
+    .modal {
+
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(255, 255, 255);
+        width: 80%;
+        height: 80%;
+
+
+
+        .closeBtn {
+            border: none;
+            color: black;
+
+            >i {
+                font-size: 1.5rem;
+                cursor: pointer;
+                background-color: rgb(228, 228, 228);
+
+            }
+
+            >i:hover {
+                color: $primary;
+            }
+
+
+        }
+
+        .modal-header {
+            background-color: rgb(228, 228, 228);
+            padding: 1rem;
+            text-align: right;
+        }
+
+        .modal-main {
+            display: flex;
+            padding: 1rem;
+
+
+            .left {
+                .product-images {
+                    // border: 1px solid black;
+                    width: 80%;
+                    text-align: center;
+                    display: flex;
+                    gap: 1rem;
+
+                    .image {
+                        width: 90%;
+                        // border: 1px solid black;
+                        display: flex;
+                        flex-direction: column;
+
+
+                        >.buttons {
+                            display: flex;
+                            gap: 18rem;
+                            transform: translateY(-16rem);
+
+
+                            >button {
+                                border: none;
+                                background-color: transparent;
+                                color: rgb(32, 32, 32);
+                                cursor: pointer;
+                                padding: 0.5rem;
+
+
+                                &:hover {
+                                    color: $primary;
+
+                                }
+                            }
+                        }
+
+                    }
+
+                    .image>img {
+
+                        width: 100%;
+
+                    }
+
+
+                }
+
+            }
+
+            .thumbnail {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                height: 200px;
+
+                >img {
+                    height: 100px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .right {
+
+                // border: 1px solid black;
+                width: 40%;
+                transform: translateX(-2.5rem);
+                text-align: center;
+                padding-top: 10rem;
+
+
+            }
+
+            .description>div {
+                font-size: 2rem;
+
+
+
+                >span {
+                    font-size: 2rem;
+                }
+
+            }
+
+            .price {
+                display: flex;
+
+                flex-direction: column;
+            }
+
+            .badges {
+                // border: 1px solid red;
+                height: 300px;
+            }
+
+            .badge-eco {
+                background-color: $green;
+            }
+
+
+        }
+    }
+
+}
