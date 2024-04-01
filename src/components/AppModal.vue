@@ -10,7 +10,7 @@ export default {
         }
     },
     methods: {
-        changeImage() {
+        change() {
             this.changeImage = !this.changeImage
         }
     }
@@ -36,10 +36,10 @@ export default {
                         <div class="image">
                             <img :src="changeImage === true ? product.imageA : product.imageB" alt="">
                             <div class="buttons">
-                                <button @click="changeImage()">
+                                <button @click="change()">
                                     <i class="fa-solid fa-chevron-left"></i>
                                 </button>
-                                <button @click="changeImage()">
+                                <button @click="change()">
                                     <i class="fa-solid fa-chevron-right"></i>
                                 </button>
                             </div>
@@ -60,7 +60,8 @@ export default {
                         <div class="title">{{ product.title }}</div>
                         <div class="price">
                             <span class="final_price">Price: {{ product.finalPrice }}&euro;</span>
-                            <span class="initial_price">{{ product.initialPrice }} &euro;</span>
+                            <span class="initial_price" :class="product.initialPrice === 'None' ? 'no-display' : ''">{{
+                                product.initialPrice }} &euro;</span>
                         </div>
                         <div class="badges">
                             <div class="badge-eco" :class="product.eco === 'None' ? 'no-display' : ''">{{ product.eco }}

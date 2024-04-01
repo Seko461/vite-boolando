@@ -50,6 +50,7 @@
             "imageB": "/images/5b.webp",
             "label": "Maya Deluxe",
             "title": "Stripe Bodice",
+            "initialPrice": "None",
             "finalPrice": 99.99,
             "eco": "None",
             "discount": "-50%"
@@ -60,6 +61,7 @@
             "imageB": "/images/6b.webp",
             "label": "Esprit",
             "title": "Maglione - Black",
+            "initialPrice": "None",
             "finalPrice": 29.99,
             "eco": "Sostenibilità",
             "discount": "-50%"

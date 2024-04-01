@@ -25,7 +25,8 @@ export default {
             <div class="title">{{ product.title }}</div>
             <div class="price">
                 <span class="final_price">{{ product.finalPrice }}&euro;</span>
-                <span class="initial_price">{{ product.initialPrice }} &euro;</span>
+                <span class="initial_price" :class="product.initialPrice === 'None' ? 'no-display' : ''">{{
+                    product.initialPrice }} &euro;</span>
             </div>
         </div>
     </div>
